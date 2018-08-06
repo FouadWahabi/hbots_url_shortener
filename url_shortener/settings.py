@@ -11,7 +11,7 @@ SECRET_KEY = 'Sykmx)yj%mZ/Mo|'
 CSRF_ENABLED = True
 CSRF_SESSION_KEY = '_csrf_token'
 
-SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://postgres:password@127.0.0.1:5432/socialbots_shortly'
+SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://postgres:password@127.0.0.1:5432/socialbots'
 
 try:
     from .local_settings import *

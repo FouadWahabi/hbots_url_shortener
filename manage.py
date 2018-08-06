@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from flask_script import Command, Manager, Shell
+from flask_script import Server, Command, Manager, Shell
 
 from url_shortener import app
 
@@ -54,4 +54,5 @@ class Test(Command):
 
 manager.add_command('syncdb', SyncDB())
 manager.add_command('test', Test())
+manager.add_command('runserver', Server(host="0.0.0.0", port=9000))
 manager.run()

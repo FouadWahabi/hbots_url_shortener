@@ -6,9 +6,9 @@
     <div class="span14">
         <form method="POST" action="{{ url_for('frontend.index') }}">
             <fieldset>
-                {{ macros.render_field(form.url, with_label=False) }}
+                {{ macros.render_field(form.url, with_label=True) }}
                 <br />
-                {{ macros.render_field(form.slug, with_label=False) }}
+                {{ macros.render_field(form.slug, with_label=True) }}
                 <br />
                 <input class="btn primary" type="submit" value="Make It Short !">
                 {{ form.hidden_tag() }}

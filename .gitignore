@@ -1,0 +1,7 @@
+*.db
+*.pyc
+*.pyo
+*~
+*.orig
+*.sqlite
+url_shortener/local_settings.py

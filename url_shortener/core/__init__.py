@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 def setup_routing(app, routes):
-    
     for route in routes:
         # endpoint: (blueprint_instance, url_prefix)
         # rules: [('/route/', view_function), ...]
@@ -13,3 +12,9 @@ def setup_routing(app, routes):
                 endpoint[0].add_url_rule(pattern, view_func=view)
         if endpoint is not None:
             app.register_blueprint(endpoint[0], url_prefix=endpoint[1])
+
+
+def setup_apis(api, apis):
+    print(apis)
+    for rest_api in apis:
+        api.add_resource(rest_api[1], rest_api[0], endpoint='user')

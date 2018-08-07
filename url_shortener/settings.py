@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-BASE_URL = 'http://localhost:5000'
+BASE_URL = 'http://short-test.hbots.co'
 
 PREFIX = '_'
 
